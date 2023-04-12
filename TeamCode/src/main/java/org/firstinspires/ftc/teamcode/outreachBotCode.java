@@ -6,7 +6,8 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@TeleOp
+@TeleOp (name="Outreach Bot TeleOp", group="Linear OpMode")
+//@Disabled
 public abstract class outreachBotCode extends LinearOpMode {
 
     private ElapsedTime runtime = new ElapsedTime();
