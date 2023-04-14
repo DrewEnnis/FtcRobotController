@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 @TeleOp (name="Outreach Bot TeleOp", group="Linear OpMode")
 //@Disabled
-public abstract class outreachBotCode extends LinearOpMode {
+public class outreachBotCode extends LinearOpMode {
 
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor leftDrive = null;
