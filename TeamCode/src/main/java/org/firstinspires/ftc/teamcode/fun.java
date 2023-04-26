@@ -6,9 +6,9 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@TeleOp (name="Outreach Bot TeleOp", group="Linear OpMode")
+@TeleOp (name="fun", group="Linear OpMode")
 //@Disabled
-public class outreachBotCode extends LinearOpMode {
+public class fun extends LinearOpMode {
 
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor leftDrive = null;
@@ -16,8 +16,8 @@ public class outreachBotCode extends LinearOpMode {
 
     private DcMotor spinnyThing = null;
 
-@Override
-public void runOpMode() {
+    @Override
+    public void runOpMode() {
         rightDrive = hardwareMap.get(DcMotor.class, "leftwheel");
         leftDrive = hardwareMap.get(DcMotor.class, "rightwheel");
         spinnyThing = hardwareMap.get(DcMotor.class,"spinner");
@@ -35,7 +35,7 @@ public void runOpMode() {
 
             leftPower = -gamepad1.left_stick_y;
             rightPower = gamepad1.right_stick_y;
-            spinnerPower = .5 * gamepad1.right_trigger;
+            spinnerPower = gamepad1.right_trigger;
 
 
 
