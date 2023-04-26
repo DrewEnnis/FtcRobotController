@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 @TeleOp (name="fun", group="Linear OpMode")
-//@Disabled
+@Disabled
 public class fun extends LinearOpMode {
 
     private ElapsedTime runtime = new ElapsedTime();
@@ -17,6 +17,7 @@ public class fun extends LinearOpMode {
     private DcMotor spinnyThing = null;
 
     @Override
+
     public void runOpMode() {
         rightDrive = hardwareMap.get(DcMotor.class, "leftwheel");
         leftDrive = hardwareMap.get(DcMotor.class, "rightwheel");
