@@ -29,7 +29,7 @@ public void runOpMode() {
             double leftPower;
             double rightPower;
 
-            leftPower = gamepad1.left_stick_y;
+            leftPower = -gamepad1.left_stick_y;
             rightPower = gamepad1.right_stick_y;
 
             leftDrive.setPower(leftPower);
